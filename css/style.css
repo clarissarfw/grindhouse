@@ -1,7 +1,13 @@
-/* Enter your Styles below! */
-nav{ float: right;
-	margin: ;
-	width: 10%}
+h1{}
+
+h2{ font-family: nimbus-sans-condensed, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    margin: 3%;
+    line-height: 30px; 
+    font-size:17px;
+    }
 
 nav-2{ 
 	font-family: nimbus-sans-condensed, sans-serif;
@@ -13,38 +19,16 @@ nav-2{
 	margin: 3%;
 	width: 5%;
 	list-style-type: none;}
+body {
+    background-image: url("assets/background1.png");
+}
 
-h1{}
-
-h2{ font-family: nimbus-sans-condensed, sans-serif;
-	font-weight: 700;
-	font-style: normal;
-	text-transform: uppercase;
-    margin: 3%;
-    line-height: 30px; 
-    font-size:17px;
-	}
-
-header {margin-bottom: 20px;}
 footer{
 	position: fixed;
     left: 0px;
     bottom: 0px;
-    height: 24%;
     width: 100%;
 }
-
-
-.small-logo{
-	width: 25%
-}
-
-.background{
-	width: 100%;
-}
-img { 
-    max-width: 100%; 
-    height: auto;}
 
 a{ outline: none;
   text-decoration: none;}
@@ -59,65 +43,15 @@ a:hover {
   color: #4667A4;
 }
 
+.wrapper{grid-template-columns: 1fr 1fr 1fr }
+
+.about{
+    width: 8%
+}
+.menu{
+    width: 8%
 }
 
-.menus{size: 70%}
-
-
-
-
-
-/*----------------------------------------------------------------------*
-	Flies
-*----------------------------------------------------------------------*/
-
-.menu {
-    position: absolute;
-    left:-315px;
-    top:210px;
-    z-index: 99;
-    animation-name: flightpathA;
-    animation-delay: 5s;
-    animation-duration: 4.5s;   
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
-    transform: rotate(50deg) scale(.75,.75);
+.small-logo{
+	width: 25%
 }
-
-@keyframes flightpathA {
-    0%   {left:-315px; top:210px;}
-    50%  {left:300px; top:625px;}
-    100% {left:1200px; top:500px;}
-}
-
-.about {
-    position: absolute;
-    left:-315px;
-    top:210px;
-    z-index: 99;
-    animation-name: flightpathB;
-    animation-delay: 5.5s;
-    animation-duration: 4.5s;   
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
-    transform: rotate(50deg) scale(.75,.75);
-}
-
-@keyframes flightpathB {
-    0%   {left:-915px; top:410px;}
-    50%  {left:800px; top:225px;}
-    100% {left:-300px; top:400px;}
-}
-
-/*----------------------------------------------------------------------*
-	Miscellaneous
-*----------------------------------------------------------------------*/
-
-/* Forces a box filled with floated elements to wrap around child elements */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-
