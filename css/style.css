@@ -6,7 +6,7 @@ h2{ font-family: nimbus-sans-condensed, sans-serif;
     text-transform: uppercase;
     margin: 3%;
     line-height: 30px; 
-    font-size:17px;
+    font-size:25px;
     }
 
 nav-2{ 
@@ -20,13 +20,20 @@ nav-2{
 	width: 5%;
 	list-style-type: none;}
 body {
-    background-image: url("assets/background1.png");
+    background-image: url("../assets/background1.png");
+    background-size: cover;
 }
+
+.fly-fool {
+	position: relative;
+    left: 0;
+    top: 0;}
 
 footer{
 	position: fixed;
     left: 0px;
     bottom: 0px;
+    margin-bottom: -4%;
     width: 100%;
 }
 
@@ -40,18 +47,67 @@ a:visited {
   color: black;
 }
 a:hover {
-  color: #4667A4;
+  color: #f5582f;
+}
+
+svg:hover {
+  fill: #bdd2ed;
 }
 
 .wrapper{grid-template-columns: 1fr 1fr 1fr }
 
 .about{
-    width: 8%
+    width: 15%
 }
+.surprise{
+    width: 15%;
+}
+
+.about {
+    position: absolute;
+    right:90px;
+    top:-140px;
+    z-index: 99;
+    animation-name: flightpathA;
+    animation-delay: 1s;
+    animation-duration: 30s;   
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flightpathA {
+    0%   {right:90px; top:-140px;}
+    25% {right:900px; top:-50px;}
+	50% {right:500px; top:120px;}
+    100%  {right:90px; top:-140px;}
+}
+
+.menu {
+    position: absolute;
+    right:300px;
+    top:-140px;
+    z-index: 99;
+    animation-name: flightpathB;
+    animation-delay: 1s;
+    animation-duration: 30s;   
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flightpathB {
+	0%   {right:300px; top:-140px;}
+    25% {right:90px; top:120px;}
+    50% {right:500px; top:-140px;}
+    75%   {right:750px; top:-140px;}
+    100%   {right:300px; top:-140px;}
+}
+
+
+
 .menu{
-    width: 8%
+    width: 15%
 }
 
 .small-logo{
-	width: 25%
+	width: 40%
 }

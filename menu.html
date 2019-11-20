@@ -23,12 +23,64 @@
 			<li><a href="surprise"></a></li>
 		</ul>
 	</nav-2>
-	</header-2>
-	<main>
-<div class="menus">	
-<img src="assets/drink.png" alt="drink menu">
-<img src="assets/food.png" alt="food menu"></div>
-</main>
+
+<head>
+<style> 
+#myDIV {
+  position: absolute;
+  top: 130px;
+  left: 30px;
+  width: 700px;
+  height: 150px;
+  
+}
+
+#DIV2 {
+  position: relative;
+  top: 60px;
+  left: 120px;
+  width: 700px;
+  height: 150px;
+  
+}
+</style>
+</head>
+<body>
+
+
+
+<button onclick="myFunction()">Try it</button>
+
+<div id="DIV2">
+  <img class="drink-menu" src="SVG/drink.svg">
+</div>
+
+<div id="myDIV">
+	<img class="food-menu" src="SVG/food.svg">
+</div>
+	
+<script>
+function myFunction() {
+  document.getElementById("myDIV").style.zIndex = "-1";
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
 	<footer>
 		<!-- footer content here -->
 	</footer>
