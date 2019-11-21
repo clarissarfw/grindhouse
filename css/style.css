@@ -37,6 +37,13 @@ footer{
     width: 100%;
 }
 
+.footer2 {
+	position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+
 a{ outline: none;
   text-decoration: none;}
 a:link {
@@ -103,6 +110,11 @@ svg:hover {
 }
 
 
+#drink-menu{ 
+z-index: 1;}
+
+#food-menu{ 
+z-index: -1;}
 
 .menu{
     width: 15%

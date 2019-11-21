@@ -18,8 +18,8 @@
 	</div class="small-logo">	
 	<nav-2>
 		<ul>
-			<li><a href="menu.html">menu</a></li>
-			<li><a href="about.html">about</a></li>
+			<li><a href="menu.html"><img class="menu-button" src="SVG/menu-button.svg"></a></li>
+			<li><a href="about.html"><img class="about-button" src="SVG/about-button.svg"></a></li>
 			<li><a href="surprise"></a></li>
 		</ul>
 	</nav-2>
@@ -28,8 +28,8 @@
 <style> 
 #myDIV {
   position: absolute;
-  top: 130px;
-  left: 30px;
+  top: 230px;
+  left: 230px;
   width: 700px;
   height: 150px;
   
@@ -37,8 +37,8 @@
 
 #DIV2 {
   position: relative;
-  top: 60px;
-  left: 120px;
+  top: 200px;
+  left: 340px;
   width: 700px;
   height: 150px;
   
@@ -48,35 +48,27 @@
 <body>
 
 
-
-<button onclick="myFunction()">Try it</button>
-
 <div id="DIV2">
-  <img class="drink-menu" src="SVG/drink.svg">
+  <img onclick="myFunction()" class="drink-menu" src="SVG/drink.svg">
 </div>
 
 <div id="myDIV">
-	<img class="food-menu" src="SVG/food.svg">
+	<img onclick="myFunction2()"class="food-menu" src="SVG/food.svg">
 </div>
 	
 <script>
+
+
 function myFunction() {
-  document.getElementById("myDIV").style.zIndex = "-1";
+  document.getElementById('DIV2').style.zIndex = 1;
+  document.getElementById('myDIV').style.zIndex = -1;
+}
+
+function myFunction2() {
+  document.getElementById('DIV2').style.zIndex = -1;
+  document.getElementById('myDIV').style.zIndex = 1;
 }
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 	
