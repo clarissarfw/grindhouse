@@ -1,6 +1,24 @@
 // your script file for adding your own jquery
 $(function() {
 // Your Code from here on down. Don't delete that line above!
+var flip = 0;
+$( ".about-us" ).click(function() {
+  $( ".table-one" ).toggle( flip++ % 2 === 0 ).slideToggle("slow");
+});
+
+var flip = 0;
+$( ".started" ).click(function() {
+  $( ".table-two" ).toggle( flip++ % 2 === 0 ).slideToggle("slow");
+});
+
+var flip = 0;
+$( ".pictures" ).click(function() {
+  $( ".table-three" ).toggle( flip++ % 2 === 0 ).slideToggle("slow");
+}); 
+
+
+
+
 <img class="swapme" src="../SVG/sclogo.svg">  
 <script>
   src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -16,20 +34,7 @@ $(function() {
   </script>
 
 
-var flip = 0;
-$( ".about-us" ).click(function() {
-  $( ".table-one" ).toggle( flip++ % 2 === 0 ).slideToggle("slow");
-});
 
-var flip = 0;
-$( ".started" ).click(function() {
-  $( ".table-two" ).toggle( flip++ % 2 === 0 ).slideToggle("slow");
-});
-
-var flip = 0;
-$( ".pictures" ).click(function() {
-  $( ".table-three" ).toggle( flip++ % 2 === 0 ).slideToggle("slow");
-}); 
 
 
 
