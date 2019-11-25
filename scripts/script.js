@@ -16,7 +16,20 @@ $(function() {
   </script>
 
 
+var flip = 0;
+$( ".about-us" ).click(function() {
+  $( ".table-one" ).toggle( flip++ % 2 === 0 ).slideToggle("slow");
+});
 
+var flip = 0;
+$( ".started" ).click(function() {
+  $( ".table-two" ).toggle( flip++ % 2 === 0 ).slideToggle("slow");
+});
+
+var flip = 0;
+$( ".pictures" ).click(function() {
+  $( ".table-three" ).toggle( flip++ % 2 === 0 ).slideToggle("slow");
+}); 
 
 
 

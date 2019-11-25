@@ -13,6 +13,14 @@ h2{ font-family: nimbus-sans-condensed, sans-serif;
     line-height: 30px; 
     font-size:25px;
     }
+h3{ font-family: nimbus-sans-condensed, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    margin: 3%;
+    line-height: 30px; 
+    font-size:25px;
+    }
 
 nav-2{ 
 	font-family: nimbus-sans-condensed, sans-serif;
@@ -146,3 +154,4 @@ z-index: -1;}
 .small-logo{
 	width: 40%
 }
+
