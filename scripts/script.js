@@ -3,43 +3,61 @@ $(function() {
 // Your Code from here on down. Don't delete that line above!
 var flip = 0;
 $( ".about-us" ).click(function() {
-  $( ".table-one" ).toggle( flip++ % 2 === 0 ).slideToggle("slow");
+  $( ".table-one" ).slideToggle("slow");
 });
-
-var flip = 0;
 $( ".started" ).click(function() {
-  $( ".table-two" ).toggle( flip++ % 2 === 0 ).slideToggle("slow");
+  $( ".table-two" ).slideToggle("slow");
 });
-
-var flip = 0;
 $( ".pictures" ).click(function() {
-  $( ".table-three" ).toggle( flip++ % 2 === 0 ).slideToggle("slow");
+  $( ".table-three" ).slideToggle("slow");
 }); 
 
 
 
 
-<img class="swapme" src="../SVG/sclogo.svg">  
-<script>
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-  <script>
+// <img class="swapme" src="../SVG/sclogo.svg">  
+// <script>
+  // src="https://code.jquery.com/jquery-3.4.1.min.js"
+  // integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  // crossorigin="anonymous"></script>
+  // <script>
   	$('.swapme').mouseover(function(){
   		$('.swapme').attr('src', 'http://placekitten.com/400/300')
   	})
   	$('.swapme').mouseout(function(){
   		$('.swapme').attr('src', 'http://placekitten.com/400/600')
   	})
-  </script>
+  // </script>
 
 
+var slideIndex = 1;
+showSlides(slideIndex);
 
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-
-
-
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
 
 
 
