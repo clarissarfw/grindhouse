@@ -22,10 +22,10 @@ $( ".pictures" ).click(function() {
   // crossorigin="anonymous"></script>
   // <script>
   	$('.swapme').mouseover(function(){
-  		$('.swapme').attr('src', 'http://placekitten.com/400/300')
+  		$('.swapme').attr('src', 'SVG/sclogo.svg')
   	})
   	$('.swapme').mouseout(function(){
-  		$('.swapme').attr('src', 'http://placekitten.com/400/600')
+  		$('.swapme').attr('src', 'SVG/ghlogo.svg')
   	})
   // </script>
 
