@@ -129,8 +129,9 @@ svg:hover {
 
 @keyframes flightpathA {
     0%   {right:90px; top:-140px;}
-    25% {right:900px; top:-50px;}
-	50% {right:500px; top:120px;}
+    25% {right:90px; top:120px;}
+	50% {right:500px; top:-120px;}
+  75% {right:300px; top:120px;}
     100%  {right:90px; top:-140px;}
 }
 
@@ -148,18 +149,12 @@ svg:hover {
 
 @keyframes flightpathB {
 	0%   {right:300px; top:-140px;}
-    25% {right:90px; top:120px;}
-    50% {right:500px; top:-140px;}
+    25% {right:900px; top:-50px;}
+    50% {right:500px; top:120px;}
     75%   {right:750px; top:-140px;}
     100%   {right:300px; top:-140px;}
 }
 
-
-#drink-menu{ 
-z-index: 1;}
-
-#food-menu{ 
-z-index: -1;}
 
 .menu{
     width: 15%
@@ -263,5 +258,9 @@ z-index: -1;}
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+
 }
+
+
+
 

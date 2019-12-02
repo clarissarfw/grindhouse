@@ -1,19 +1,27 @@
 // your script file for adding your own jquery
 $(function() {
 // Your Code from here on down. Don't delete that line above!
-var flip = 0;
-$( ".about-us" ).click(function() {
-  $( ".table-one" ).slideToggle("slow");
+  var flip = 0;
+  $( ".about-us" ).click(function() {
+    $( ".table-one" ).slideToggle("slow");
+  });
+  $( ".started" ).click(function() {
+    $( ".table-two" ).slideToggle("slow");
+  });
+  $( ".pictures" ).click(function() {
+    $( ".table-three" ).slideToggle("slow");
+  }); 
+
+
+$('.drink-menu').click(function() {
+  $('#drink-id').css('z-index', '1')
+  $('#food-id').css('z-index', '-1')
 });
-$( ".started" ).click(function() {
-  $( ".table-two" ).slideToggle("slow");
+
+$('.food-menu').click(function() {
+  $('#food-id').css('z-index', '1')
+  $('#drink-id').css('z-index', '-1')
 });
-$( ".pictures" ).click(function() {
-  $( ".table-three" ).slideToggle("slow");
-}); 
-
-
-
 
 // <img class="swapme" src="../SVG/sclogo.svg">  
 // <script>
@@ -58,8 +66,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-
-
 
 
 

@@ -7,8 +7,24 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<style> 
+#food-id {
+  position: absolute;
+  top: 230px;
+  left: 230px;
+  width: 700px;
+  
+}
+
+#drink-id {
+  position: relative;
+  top: 200px;
+  left: 340px;
+  width: 700px;
+ }
+  
+</style>
 </head>
-<body>
 <body background="assets/background.png">
 	<header-2>
 		<div class="small-logo">
@@ -23,57 +39,33 @@
 			<li><a href="surprise"></a></li>
 		</ul>
 	</nav-2>
+	<script type="text/javascript">
+		
 
-<head>
-<style> 
-#myDIV {
-  position: absolute;
-  top: 230px;
-  left: 230px;
-  width: 700px;
-  height: 150px;
-  
-}
+// function myFunction() {
+//   document.getElementById('drink-id').style.zIndex = -5;
+//   document.getElementById('food-id').style.zIndex = 5;
+// }
 
-#DIV2 {
-  position: relative;
-  top: 200px;
-  left: 340px;
-  width: 700px;
-  height: 150px;  }
-  
-</style>
-</head>
-<body>
+// function myfunction2() {
+//   document.getElementById('drink-id').style.zIndex = 15;
+//   document.getElementById('food-id').style.zIndex = -5;
+// }
 
 
-<div id="DIV2">
-  <img onclick="myFunction()" class="drink-menu" src="SVG/drink.svg">
+	</script>
+
+<div id="drink-id">
+  <img  class="drink-menu" src="SVG/drink.svg">
 </div>
 
-<div id="myDIV">
-	<img onclick="myFunction2()"class="food-menu" src="SVG/food.svg">
+<div id="food-id">
+	<img class="food-menu" src="SVG/food.svg">
 </div>
 	
-<script>
-
-
-function myFunction() {
-  document.getElementById('DIV2').style.zIndex = 1;
-  document.getElementById('myDIV').style.zIndex = -1;
-}
-
-function myFunction2() {
-  document.getElementById('DIV2').style.zIndex = -1;
-  document.getElementById('myDIV').style.zIndex = 1;
-}
-</script>
-
-
-	
-
 
 	</footer>
+
 	<!-- link for jquery -->
 	<script
   	src="https://code.jquery.com/jquery-3.4.1.min.js"
