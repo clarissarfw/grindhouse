@@ -18,13 +18,12 @@ h3{ font-family: nimbus-sans-condensed, sans-serif;
     font-style: normal;
     text-transform: uppercase;
     margin: 3%;
-    line-height: 30px; 
-    font-size:25px;
+    line-height: 45px; 
+    font-size:35px;
     }
-h4{ font-family: nimbus-sans-condensed, sans-serif;
+h4{ font-family: nimbus-sans, sans-serif;
     font-weight: 400;
-    font-style: normal;
-    margin: 3%;
+    font-style: normal;    margin: 3%;
     line-height: 30px; 
     font-size:20px;
     max-width: 40%
