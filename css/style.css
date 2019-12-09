@@ -84,12 +84,12 @@ footer{
     width: 100%;
 }
 
-.footer2 {
-	position: fixed;
-    left: 0px;
-    bottom: 0px;
-    width: 100%;
+.info{ text-align: right;
+  margin-top: -100px;
+
 }
+
+
 
 a{ outline: none;
   text-decoration: none;}
@@ -165,6 +165,8 @@ svg:hover {
 .small-logo{
 	width: 40%
 }
+
+
 
 
 * {box-sizing:border-box}
@@ -263,6 +265,9 @@ svg:hover {
 
 }
 
+.table-three { padding-left: 40px;
+width: 40%}
 
+main{ padding-top: 100px; }
 
 
