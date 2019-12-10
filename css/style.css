@@ -85,7 +85,7 @@ footer{
 }
 
 .info{ text-align: right;
-  margin-top: -100px;
+  margin-top: -8%;
 
 }
 
@@ -269,5 +269,90 @@ svg:hover {
 width: 40%}
 
 main{ padding-top: 100px; }
+
+@media screen and (max-width: 1050px) {
+  .info{ text-align: left;
+    margin-top: 0%; }
+  .small-logo { 
+  width:80%; }
+  h4{ max-width: 70%; }
+  .table-three{width: 50%}
+.drink-menu{ width:70%;
+  
+
+}
+
+.food-menu{width:70%; 
+
+   }
+
+
+  }
+@media screen and (max-width: 800px) {
+  nav-2{width:20%;}
+.about {
+    position: absolute;
+    right:90px;
+    top:-100px;
+    z-index: 99;
+    animation-name: flightpathA;
+    animation-delay: 1s;
+    animation-duration: 30s;   
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+.drink-menu{ width:60%;
+  position: relative;
+  top: -200px;
+  left: -300px;
+  
+
+}
+
+.food-menu{width:60%;
+position: relative;
+  top: 500px;
+  left: -190px; 
+
+   }
+
+
+@keyframes flightpathA {
+    0%   {right:90px; top:-100px;}
+    25% {right:90px; top:120px;}
+  50% {right:20px; top:20px;}
+    100%  {right:90px; top:-100px;}
+}
+
+.menu {
+    position: absolute;
+    right:300px;
+    top:0px;
+    z-index: 99;
+    animation-name: flightpathB;
+    animation-delay: 1s;
+    animation-duration: 20s;   
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flightpathB {
+  0%   {right:300px; top:0px;}
+    25% {right:340px; top:200px;}
+    50% {right:300px; top:120px;}
+    100%   {right:300px; top:0px;}
+}
+.about{
+    width: 30%}
+.menu{
+    width: 30%}
+  }
+  
+
+}
+
+
+  }
 
 
