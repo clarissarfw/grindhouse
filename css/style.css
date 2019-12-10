@@ -41,7 +41,13 @@ nav-2{
 	float: right;
 	margin: 3%;
 	width: 10%;
-	list-style-type: none;}
+	list-style-type: none;
+  
+  }
+
+nav-2.hover{
+  color: #f5582f 
+}
 body {
     width: 100vw;
     height: 100vh;
